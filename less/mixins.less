@@ -1,1 +1,26 @@
 // Mixins Here
+.display() {
+  display: flex;
+}
+
+.padding() {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+//parametric mixin
+.button(@button-bg, @button-font, @hover-font, @hover-bg) {
+  border: 1px solid black;
+  background: @button-bg;
+  color: @button-font;
+  font-size: 1.6rem;
+  width: 25%;
+  text-align: center;
+  padding: 3% 0%;
+  border-radius: 5px;
+
+  &:hover {
+    color: @hover-font;
+    background: @hover-bg;
+  }
+}

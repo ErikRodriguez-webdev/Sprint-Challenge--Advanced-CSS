@@ -1,1 +1,22 @@
 // Navigation code here
+.topNav {
+  .display();
+  flex-direction: column;
+  background: @nav-bg;
+  border-bottom: 5px solid @nav-border;
+
+  h1 {
+    .display();
+    .padding();
+    justify-content: center;
+  }
+
+  div {
+    .display();
+    .padding();
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+    }
+  }
+}
